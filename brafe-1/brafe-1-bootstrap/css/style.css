@@ -97,7 +97,8 @@ img {
 /* Sobre */
 
 .sobre {
-	padding: 60px 0;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .sobre h2 {
@@ -288,10 +289,22 @@ h2.produtos-mineiro::before {
 
 .footer {
 	background: #d6d3c8;
-	padding: 40px 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .footer p {
 	font-size: 1.125em;
 	line-height: 1.4em;
+}
+
+.footer img {
+	float: right;
+}
+
+@media (max-width: 768px) {
+	.footer img {
+		float: none;
+		margin-top: 20px;
+	}
 }
