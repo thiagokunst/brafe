@@ -1,4 +1,9 @@
-body, p, h1, h2, ul, li {
+body,
+p,
+h1,
+h2,
+ul,
+li {
   margin: 0px;
   padding: 0px;
 }
@@ -31,7 +36,7 @@ body {
 }
 
 .header-menu {
-  border-top: 3px solid #d6d3c8 ;
+  border-top: 3px solid #d6d3c8;
   border-bottom: 3px solid #d6d3c8;
   text-align: center;
   margin-bottom: 40px;
@@ -51,12 +56,12 @@ body {
 }
 
 .header-menu li a::before {
-  content: '•';
+  content: "•";
   padding-right: 10px;
 }
 
 .header-menu li:first-child a::before {
-  content: '';
+  content: "";
 }
 
 /* Conteudo */
@@ -66,8 +71,9 @@ body {
   margin: 0 auto;
 }
 
-.container::after, .container::before {
-  content: '';
+.container::after,
+.container::before {
+  content: "";
   display: table;
   clear: both;
 }
@@ -79,8 +85,27 @@ body {
   border: 3px solid #d6d3c8;
   width: 300px;
   margin: 0 10px;
-  padding: 20px;  
+  padding: 20px;
   float: left;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .container {
+    max-width: 720px;
+  }
+  .filtro {
+    width: 220px;
+  }
+}
+
+@media (max-width: 739px) {
+  .container {
+    max-width: 300px;
+  }
+
+  .filtro {
+    display: none;
+  }
 }
 
 .filtro h2 {
@@ -101,7 +126,7 @@ body {
 }
 
 .filtro li::after {
-  content: '';
+  content: "";
   display: block;
   width: 20px;
   height: 20px;
@@ -126,23 +151,17 @@ body {
 
 .sabor-3 {
   color: #492901;
-  box-shadow: 20px 0 0 0, 
-              40px 0 0 0;
+  box-shadow: 20px 0 0 0, 40px 0 0 0;
 }
 
 .sabor-4 {
   color: #c17139;
-  box-shadow: 20px 0 0 0, 
-              40px 0 0 0,
-              60px 0 0 0;
+  box-shadow: 20px 0 0 0, 40px 0 0 0, 60px 0 0 0;
 }
 
 .sabor-5 {
   color: #d7a54d;
-  box-shadow: 20px 0 0 0, 
-              40px 0 0 0,
-              60px 0 0 0,
-              80px 0 0 0;
+  box-shadow: 20px 0 0 0, 40px 0 0 0, 60px 0 0 0, 80px 0 0 0;
 }
 
 /* Produtos */
@@ -158,13 +177,12 @@ body {
   font-weight: normal;
 }
 
-
 .produtos li {
   width: 300px;
   float: left;
 }
 
-.produtos li:nth-child(even){
+.produtos li:nth-child(even) {
   margin-left: 20px;
 }
 
@@ -185,9 +203,29 @@ body {
   top: -15px;
 }
 
-.produtos li h2{
+.produtos li h2 {
   font-size: 0.875em;
   font-weight: normal;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .produtos {
+    width: 460px;
+  }
+
+  .produtos li {
+    width: 220px;
+  }
+}
+
+@media (max-width: 739px) {
+  .produtos {
+    width: 300px;
+  }
+
+  .produtos li {
+    width: 140px;
+  }
 }
 
 .footer {
